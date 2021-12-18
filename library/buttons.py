@@ -21,7 +21,7 @@ home_button = [
 
 
 start_button = [
-    [InlineKeyboardButton("🏅 Telegram 🏅", url="https://t.me/TheLawliet"),
+    [InlineKeyboardButton("🏅 GitHub 🏅", url="https://t.me/lawliet_the_l"),
      InlineKeyboardButton("⚙️Settings ⚙", "start_btn")]
 ]
 
