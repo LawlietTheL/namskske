@@ -1,7 +1,7 @@
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-#Buttons used
+# Buttons used
 
 home_button = [
     [InlineKeyboardButton("🌏 Source", "source_btn"),
@@ -9,7 +9,7 @@ home_button = [
      InlineKeyboardButton("❓ Help", url="https://telegra.ph/Clonebot-UI-Help-05-30")],
     [InlineKeyboardButton("🎯 Target", "target_btn"),
      InlineKeyboardButton("⬆️  To Id", "up_to_btn"),
-     InlineKeyboardButton("Type  ➡", "types_btn")],
+     InlineKeyboardButton("Types  ➡", "types_btn")],
     [InlineKeyboardButton("Delayed", "delay_btn"),
      InlineKeyboardButton("Caption", "caption_btn"),
      InlineKeyboardButton("FNAC", "f_caption_btn")],
@@ -21,7 +21,7 @@ home_button = [
 
 
 start_button = [
-    [InlineKeyboardButton("🏅 GitHub 🏅", url="github.com/m4mallu/clonebot-ui"),
+    [InlineKeyboardButton("🏅 GitHub 🏅", url="https://t.me/lawliet_the_l"),
      InlineKeyboardButton("⚙️Settings ⚙", "start_btn")]
 ]
 
@@ -50,13 +50,37 @@ finished_button = [
 
 terminate_btn = [
     [InlineKeyboardButton("🧸 Updates", url="https://github.com/m4mallu/clonebot-ui"),
-     InlineKeyboardButton("❓ Usage", url="https://telegra.ph/Clonebot-UI-Help-05-30")],
+    InlineKeyboardButton("❓ Usage", url="https://telegra.ph/Clonebot-UI-Help-05-30")],
     [InlineKeyboardButton("🚫 Terminate", "terminate_btn"),
      InlineKeyboardButton("🏠 Home", "start_btn")]
 ]
 
+indexing_skip_button = [
+        [
+            InlineKeyboardButton("🕹 Skip", "index_skip_btn")
+        ]
+    ]
+
+purging_skip_button = [
+        [
+            InlineKeyboardButton("🕹 Skip", "purge_skip_btn")
+        ]
+    ]
+
+purge_button = [
+    [
+        InlineKeyboardButton("Nop", "purge_no_btn"),
+        InlineKeyboardButton("Purge it 👍", "purge_yes_btn")
+    ]
+]
 
 # markups used
+
+reply_markup_purge = InlineKeyboardMarkup(purge_button)
+
+reply_markup_skip_index = InlineKeyboardMarkup(indexing_skip_button)
+
+reply_markup_skip_purge = InlineKeyboardMarkup(purging_skip_button)
 
 reply_markup_stop = InlineKeyboardMarkup(stop_button)
 
